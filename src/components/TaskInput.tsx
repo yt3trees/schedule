@@ -128,13 +128,7 @@ const TaskInput: React.FC<Props> = ({ setTask, tasks }) => {
     const handle2330 = () => {
         setinputTimeFrom('23:30～')
     }
-    const handle2400 = () => {
-        setinputTimeFrom('24:00～')
-    }
 {/*-------------------------------------------------------------*/}
-    const handle0900to = () => {
-        setinputTimeTo('09:00　')
-    }
     const handle0930to = () => {
         setinputTimeTo('09:30　')
     }
@@ -225,7 +219,6 @@ const TaskInput: React.FC<Props> = ({ setTask, tasks }) => {
     const handle2400to = () => {
         setinputTimeTo('24:00　')
     }
-
     return (
         <div>
             <div className='inputForm'>
@@ -269,10 +262,8 @@ const TaskInput: React.FC<Props> = ({ setTask, tasks }) => {
                     <button onClick={handle2230} className="btnis-primary">22:30</button>
                     <button onClick={handle2300} className="btnis-primary">23:00</button>
                     <button onClick={handle2330} className="btnis-primary">23:30</button>
-                    <button onClick={handle2400} className="btnis-primary">24:00</button>
                     </div>
                     <div id="right">
-                    <button onClick={handle0900to} className="btnis-primary">09:00</button>
                     <button onClick={handle0930to} className="btnis-primary">09:30</button>
                     <button onClick={handle1000to} className="btnis-primary">10:00</button>
                     <button onClick={handle1030to} className="btnis-primary">10:30</button>

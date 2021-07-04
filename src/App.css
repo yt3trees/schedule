@@ -55,6 +55,11 @@ body{
   font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
 }
 
+#todo{
+  padding-bottom: 60%;
+  margin-left:auto;margin-right:auto;
+}
+
 a {
   color: #999999;
   text-decoration: none; /* ‰ºü‚ğ•\¦‚µ‚È‚¢ */
@@ -91,11 +96,6 @@ h1:after {
   border-right: dotted 1px #535aaa;
   border-bottom: dotted 1px #535aaa;
   right: 0;
-}
-
-#todo{
-  padding-bottom: 60%;
-  margin-left:auto;margin-right:auto;
 }
 
 .inner{
@@ -159,6 +159,10 @@ ul {
   border-bottom: 2px solid #3582e7;
 }
 
+.input {
+  font-size: 18px;
+}
+
 #input {
 	position: relative;
 	width: 100%;
@@ -190,6 +194,7 @@ a.add-button {
   background-color: #ef4565;
   width: 100%;
   height: 59px;
+  font-size: 18px;
   font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
 }
 .add-button:hover,
@@ -211,24 +216,6 @@ a.btn--radius {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-/*.btn-delete{
-  font-size: 100%;
-  font-weight: bold;
-  border: 1px solid #999;
-  color: #999;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  line-height: 1.3em;
-  cursor: pointer;
-  transition: .2s;
-  margin-right: 5px;
-}
-.btn-delete:hover{
-  background: #333;
-  border-color: #333;
-  color: #FFF;
-}*/
 
 .btn-delete{
   color: #5f6c7b;
@@ -247,16 +234,20 @@ a.btn--radius {
 
 footer{
   color: #999999;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  padding: 20px 0;
-  width: 60%;
+  font-size: 14px;
+  position: fixed;
+  width:60%;
+  height:35px;
+  bottom:0;
+  text-align:center;
+  z-index: 1000;
 }
 
+
+/* ƒXƒ}ƒz‘Î‰ https://www.seojuku.com/blog/responsive-mediaquery.html */
 @media screen and (max-width: 480px) {
   body{
-    margin: 0px 0%;
+    margin: 0 0;
   }
   footer{
     width: 100%
