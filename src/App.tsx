@@ -17,6 +17,7 @@ const Header: React.FC = () => {
     <Helmet>
     <title>1日の予定メーカー
     </title>
+    meta name="viewport" content="width=device-width,initial-scale=1"
     </Helmet>
   )
 }

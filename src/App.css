@@ -50,15 +50,17 @@ html::-webkit-scrollbar{      /* Chrome, Safari ‘Î‰ */
 body{
   text-align: center;
   color: #5f6c7b;
+  margin: 0px 20%;
   background-color: #fffffe;
-  
   font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
 }
-@media only screen {
+
+@media screen and(max-width: 960px) {
   body{
-    margin: 0px 20%;
+    margin: 0px 0%;
   }
 }
+
 a {
   color: #999999;
   text-decoration: none; /* ‰ºü‚ğ•\¦‚µ‚È‚¢ */
@@ -73,7 +75,7 @@ h1 {
   top:0;
 }
 
-h1:before, h1:after { 
+h1:before, h1:after {
   position: absolute;
   top: 0;
   content:'';
