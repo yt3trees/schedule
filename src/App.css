@@ -55,12 +55,6 @@ body{
   font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
 }
 
-@media screen and(max-width: 960px) {
-  body{
-    margin: 0px 0%;
-  }
-}
-
 a {
   color: #999999;
   text-decoration: none; /* ‰ºü‚ğ•\¦‚µ‚È‚¢ */
@@ -258,6 +252,15 @@ footer{
   text-align: center;
   padding: 20px 0;
   width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    margin: 0px 0%;
+  }
+  footer{
+    width: 100%
+  }
 }
 
 /*https://www.happyhues.co/palettes/3*/
