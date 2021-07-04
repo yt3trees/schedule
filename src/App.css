@@ -37,3 +37,218 @@
   }
 }
 
+html{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
+  -ms-overflow-style: none;    /* IE, Edge ‘Î‰ */
+  scrollbar-width: none;       /* Firefox ‘Î‰ */
+}
+html::-webkit-scrollbar{      /* Chrome, Safari ‘Î‰ */
+  display:none;
+}
+
+body{
+  text-align: center;
+  color: #5f6c7b;
+  background-color: #fffffe;
+  margin: 0px 20%;
+  font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
+}
+a {
+  color: #999999;
+  text-decoration: none; /* ‰ºü‚ğ•\¦‚µ‚È‚¢ */
+}
+
+h1 {
+  color: #094067;
+  position: relative;
+  line-height: 1.4;
+  padding:0.25em 1em;
+  display: inline-block;
+  top:0;
+}
+
+h1:before, h1:after { 
+  position: absolute;
+  top: 0;
+  content:'';
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+
+h1:before {
+  border-top: dotted 1px #535aaa;
+  border-left: dotted 1px #535aaa;
+  border-bottom: dotted 1px #535aaa;
+  left: 0;
+}
+
+h1:after {
+  content: '';
+  border-top: dotted 1px #535aaa;
+  border-right: dotted 1px #535aaa;
+  border-bottom: dotted 1px #535aaa;
+  right: 0;
+}
+
+#todo{
+  padding-bottom: 60%;
+}
+
+.inner{
+  display: inline-block;
+  text-align: left;
+  width: 280px;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  white-space: nowrap;
+}
+
+.btn-headerF{
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+}
+.btn-headerT{
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+}
+
+#left{
+  width: 140px;
+  height: 297px;
+  display: inline-block;
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge ‘Î‰ */
+  scrollbar-width: none;       /* Firefox ‘Î‰ */
+}
+#left::-webkit-scrollbar{      /* Chrome, Safari ‘Î‰ */
+  display:none;
+}
+#right{
+  width: 140px;
+  height: 297px;
+  display: inline-block;
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge ‘Î‰ */
+  scrollbar-width: none;       /* Firefox ‘Î‰ */
+}
+#right::-webkit-scrollbar{      /* Chrome, Safari ‘Î‰ */
+  display:none;
+}
+.btnis-primary {
+  color: #fffffe;
+  background-color: #3da9fc;
+  border-bottom: 5px solid #177fcf;
+  width: 100%;
+  padding: 10px;
+  font-size:20px;
+  font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
+}
+.btnis-primary:hover {
+  margin-top: 3px;
+  color: #fffffe;
+  background: #61baff;
+  border-bottom: 2px solid #3582e7;
+}
+
+#input {
+	position: relative;
+	width: 100%;
+  display: block;
+}
+#input input[type='text'] {
+  font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #5f6c7b;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+#input input[type='text']:focus {
+	border: 1px solid #3da9fc;
+	outline: none;
+	box-shadow: 0 0 5px 1px #3da9fc70;
+}
+
+.add-button,
+a.add-button {
+  color: #fffffe;
+  padding: 0.3em;
+  margin-top: 0.5em;
+	transition: 0.3s;
+  background-color: #ef4565;
+  width: 100%;
+  font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
+}
+.add-button:hover,
+a.add-button:hover {
+  color: #fffffe;
+  background: #f1657f;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+.btn-delete{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+/*.btn-delete{
+  font-size: 100%;
+  font-weight: bold;
+  border: 1px solid #999;
+  color: #999;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  line-height: 1.3em;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: 5px;
+}
+.btn-delete:hover{
+  background: #333;
+  border-color: #333;
+  color: #FFF;
+}*/
+
+.btn-delete{
+  color: #5f6c7b;
+  font-size: 100%;
+  font-weight: bold;
+  background-color: #fffffe;
+  border: none;
+  transition: .2s;
+  margin-right: 5px;
+}
+.btn-delete:hover{
+  background: #3da9fc;
+  border-color: #333;
+  color: #fffffe;
+}
+
+footer{
+  color: #999999;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 20px 0;
+  width: 60%;
+}
+
+/*https://www.happyhues.co/palettes/3*/
