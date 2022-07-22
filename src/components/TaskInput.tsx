@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Task } from './Types'
 
 type Props = {
@@ -10,8 +10,9 @@ const TaskInput: React.FC<Props> = ({ setTask, tasks }) => {
     const [ inputTimeFrom, setinputTimeFrom ] = useState<string>('')
     const [ inputTimeTo, setinputTimeTo ] = useState<string>('')
     const [ inputTodo, setinputTodo ] = useState<string>('')
+    const [ inputList, setinputList ] = useState<string>('')
 
-    const [ count, setCount ] = useState<number>(tasks.length + 1)
+    const [ count, setCount ] = useState<number>(tasks.length)
 
     const handleInputFrom = (e: React.ChangeEvent<HTMLInputElement>) => {
         setinputTimeFrom(e.target.value)
@@ -24,6 +25,20 @@ const TaskInput: React.FC<Props> = ({ setTask, tasks }) => {
     }
 
     const handleSubmit = () => {
+        //inputTimeFromがnullなら実行しない
+        if (inputTimeFrom === '') {
+            alert('Fromを入力してください')
+            return
+        }
+        if (inputTimeTo === '') {
+            alert('Toを入力してください')
+            return
+        }
+        if (inputTodo === '') {
+            alert('Taskを入力してください')
+            return
+        }
+
         setCount(count + 1)
 
         const newTask: Task = {
@@ -34,6 +49,11 @@ const TaskInput: React.FC<Props> = ({ setTask, tasks }) => {
         }
 
         setTask([ ...tasks ,newTask])
+        const text = inputList + `${newTask.timefrom}${newTask.timeto}${newTask.todo}\n`
+        setinputList( text )
+        console.log(text)
+        navigator.clipboard.writeText(text)
+
         setinputTimeFrom('')
         setinputTimeTo('')
         setinputTodo('')
@@ -219,6 +239,7 @@ const TaskInput: React.FC<Props> = ({ setTask, tasks }) => {
     const handle2400to = () => {
         setinputTimeTo('24:00　')
     }
+
     return (
         <div>
             <div className='inputForm'>
