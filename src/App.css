@@ -152,6 +152,15 @@ ul {
   font-size:20px;
   font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
 }
+.btnis-primary2 {
+  color: #fffffe;
+  background-color: #ea6e82;
+  border-bottom: 5px solid #ef4565;
+  width: 100%;
+  padding: 10px;
+  font-size:20px;
+  font-family: "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro", "Yu Gothic Medium", "ŸàƒSƒVƒbƒN Medium", YuGothic, "ŸàƒSƒVƒbƒN‘Ì", "ƒƒCƒŠƒI", sans-serif;
+}
 .btnis-primary:hover {
   margin-top: 3px;
   color: #fffffe;
